@@ -10,13 +10,9 @@
 </head>
 
 <body>
-    <audio id="myAudio">
-        <source
-            src='https://storage.cloudconvert.com/tasks/e56907ef-ca1f-4e71-bd75-a4156b380a3b/video-1606363157.mp3?AWSAccessKeyId=cloudconvert-production&Expires=1606449645&Signature=rvqvCab1j4F4g%2BDCO0CUcy7KVT8%3D&response-content-disposition=inline%3B%20filename%3D%22video-1606363157.mp3%22&response-content-type=audio%2Fmpeg'
-            type="audio/mpeg">
-    </audio>
+    
     <div id='container'>
-        <img src='https://i.ibb.co/0QXJNHT/hitcheems.png' alt="hit-cheems" class='c1' id='hit-cheems'
+        <img src='./hitcheems.png' alt="hit-cheems" class='c1' id='hit-cheems'
             onmousedown="mouseDown()" onmouseup="mouseUp()"
             onclick="onClick()">
     </div>
@@ -30,13 +26,13 @@
             document.getElementById("hien").style.fontSize="24px";
         }
         function mouseDown() {
-            document.getElementById("hit-cheems").src = 'https://i.ibb.co/jWwxbnh/unnamed-1.jpg';
-            document.getElementById("myAudio").play();
+            console.log(123)
+            document.getElementById("hit-cheems").src = './unnamed-1.jpg';
             document.getElementById("hit-cheems").style.height = "223px";
             document.getElementById("hit-cheems").style.width = "418px";
         }
         function mouseUp() {
-            document.getElementById("hit-cheems").src = 'https://i.ibb.co/0QXJNHT/hitcheems.png';
+            document.getElementById("hit-cheems").src = './hitcheems.png';
         }
     </script>
 
