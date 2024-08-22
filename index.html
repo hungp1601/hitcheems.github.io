@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset='utf-8'>
+  <head>
+    <meta charset="utf-8" />
     <title>Cheems</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
 
-</head>
-
-<body>
-    
-    <div id='container'>
-        <img src='./hitcheems.png' alt="hit-cheems" class='c1' id='hit-cheems'
-            onmousedown="mouseDown()" onmouseup="mouseUp()"
-            onclick="onClick()">
+  <body>
+    <div id="container">
+      <img
+        src="./hitcheems.png"
+        alt="hit-cheems"
+        class="c1"
+        id="hit-cheems"
+        onmousedown="mouseDown()"
+        onmouseup="mouseUp()"
+        onclick="onClick()"
+      />
+      <img src="./unnamed-1.jpg" alt="" style="display: none" />
     </div>
-    <div id='hien'>
-        Hit Cheems
-    </div>
+    <div id="hien">Hit Cheems</div>
 
     <script>
-        function onClick(){
-            document.getElementById("hien").innerHTML="Don't Hit Cheems anymore.She also can feel hurt😥.";
-            document.getElementById("hien").style.fontSize="24px";
-        }
-        function mouseDown() {
-            console.log(123)
-            document.getElementById("hit-cheems").src = './unnamed-1.jpg';
-            document.getElementById("hit-cheems").style.height = "223px";
-            document.getElementById("hit-cheems").style.width = "418px";
-        }
-        function mouseUp() {
-            document.getElementById("hit-cheems").src = './hitcheems.png';
-        }
+      function onClick() {
+        document.getElementById("hien").innerHTML =
+          "Don't Hit Cheems anymore.She also can feel hurt😥.";
+        document.getElementById("hien").style.fontSize = "24px";
+      }
+      function mouseDown() {
+        console.log(123);
+        document.getElementById("hit-cheems").src = "./unnamed-1.jpg";
+        document.getElementById("hit-cheems").style.height = "223px";
+        document.getElementById("hit-cheems").style.width = "418px";
+      }
+      function mouseUp() {
+        document.getElementById("hit-cheems").src = "./hitcheems.png";
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
